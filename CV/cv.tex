@@ -99,7 +99,7 @@
 %
 \usepackage{fancyhdr,lastpage}
 \pagestyle{fancy}
-%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\pagestyle{empty}      % Uncomment this to get rid of page numbers
 \fancyhf{}\renewcommand{\headrulewidth}{0pt}
 \fancyfootoffset{\marginparsep+\marginparwidth}
 \newlength{\footpageshift}
@@ -217,6 +217,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+%\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
 \begin{document}
 \makeheading{Yongzhe Zhang}
 
@@ -228,161 +231,107 @@
 % ALSO: \rcollength is the width of the right column of the table
 %       (adjust it to your liking; default is 1.85in).
 %
-\newlength{\rcollength}\setlength{\rcollength}{2.20in}%
+\newlength{\rcollength}\setlength{\rcollength}{2.80in}%
 %
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-\href{http://www.cs.sjtu.edu.cn/}%
-     {Dept. of Computer Science and Engineering} & \\
-\href{http://www.sjtu.edu.cn/}{Shanghai Jiao Tong University} & \\
-No.800 Dongchuan Road,    & \textit{Mobile Number:} +86-13162577018 \\
-Minhang District, Shanghai, China  & \textit{E-mail:} \email{zyz915@gmail.com} \\
+Programming Rresearch Lab & \textit{Office Phone:} (03) 4212-2611 \\
+National Institute of Informatics & \textit{E-mail:} \email{zyz915@nii.ac.jp} \\
+2-1-2 Hitotsubashi, Chiyoda-ku & \textit{Website:} \url{https://zyz915.github.io/}\\
+Tokyo, 101-8430, Japan & \\
 \end{tabular}
 
 \section{Research Interests}
 
-Erasure codes, Reliable storage systems
+Distributed Computing, Graph Processing, Functional Programming, Erasure codes
 
 \section{Education}
 
 \href{http://www.sjtu.edu.cn/}{\textbf{Shanghai Jiao Tong University}}, Shanghai, China
 \begin{outerlist}
 
- \item[] Master student in
-        \href{http://www.cs.sjtu.edu.cn/}{Computer Science and Technology}, September 2013 to present
+ \item[] MSc in
+        \href{http://www.cs.sjtu.edu.cn/}{Computer Science and Technology}, Sept. 2013 to June 2015
         \begin{innerlist}
-        \item Area of Study: \emph{Erasure codes and reliable storage systems}
-        \item Adviser: {Dr. Chentao Wu, Prof. Minyi Guo}
+        \item Graduate Thesis: \emph{TIP-code: A Three Independent Parity Code to Tolerate Triple Disk Failures with Optimal Update Complexity}
+        \item Advisor: {Dr. Chentao Wu, Prof. Minyi Guo}
         \end{innerlist}
 
- \item[] BSc in \href{http://www.cs.sjtu.edu.cn/}{Computer Science and Technology}, September 2009 to June 2013
+ \item[] BSc in \href{http://www.cs.sjtu.edu.cn/}{Computer Science and Technology}, Sept. 2009 to June 2013
         \begin{innerlist}
-        \item Thesis Topic: \emph{Price-oriented Product Recommendation in New Categories}
-        \item Adviser: {Prof. Yong Yu}
+        \item Dissertation: \emph{Price-oriented Product Recommendation in New Categories}
+        \item Advisor: {Prof. Yong Yu}
         \end{innerlist}
 
 \end{outerlist}
 
 \section{Research Experience}
 
-\textbf{Lab Member} \hfill {July 2011 to June 2013}
-\begin{innerlist}
- \item[] \href{http://epcc.sjtu.edu.cn/}{Distributed and Parallel System Laboratory}, Shanghai Jiao Tong University
+%\textbf{\href{http://www.yitutech.com/}{Shanghai Yitu Technology Co. Ltd.}} \hfill {Feb. 2013 to Aug. 2013}
+% \begin{innerlist}
+%  \item Computer vision (object classification)
+% \end{innerlist}
+\textbf{\href{http://epcc.sjtu.edu.cn/wordpress/?page_id=94}{Embedded and Pervasive Computing Center}, Shanghai Jiao Tong University} \hfill {Sept. 2013 to Aug. 2015}
  \begin{innerlist}
-  \item Study on erasure codes and reliable storage systems
-  \begin{innerlist}
-   \item[$-$] Adviser: Dr. Chentao Wu, Prof. Minyi Guo
-  \end{innerlist}
+  \item Erasure codes and reliable storage systems
+  %\begin{innerlist}
+  % \item[$-$] Advisor: Dr. Chentao Wu, Prof. Minyi Guo
+  %\end{innerlist}
  \end{innerlist}
-\end{innerlist}
 
-\vspace{2pt}
-\textbf{Internship} \hfill {February 2013 to August 2013}
-\begin{innerlist}
- \item[] Shanghai Yitu Network Technology Co. Ltd.
+\vspace{8pt}
+\textbf{\href{http://research.microsoft.com/en-us/groups/mass/}{Mobile and Sensing Systems Group}, Microsoft Research Asia} \hfill {Aug. 2012 to Jan. 2013}
  \begin{innerlist}
-  \item Software engineering
-  \item Research on computer vision (object classification)
-  \begin{innerlist}
-   \item[$-$] Adviser: Dr. Leo Zhu
-  \end{innerlist}
+  \item Indoor localization and Windows app analysis
+  %\begin{innerlist}
+  % \item[$-$] Advisor: Dr. Feng Zhao
+  %\end{innerlist}
  \end{innerlist}
-\end{innerlist}
 
-\vspace{2pt}
-\textbf{Internship} \hfill {August 2012 to January 2013}
-\begin{innerlist}
- \item[] \href{http://research.microsoft.com/en-us/groups/mass/}{Mobile and Sensing Systems Group}, Microsoft Research Asia
+\vspace{8pt}
+\textbf{\href{http://www.apexlab.org/}{Data and Knowledge Management Lab}, Shanghai Jiao Tong University} \hfill {July 2011 to June 2013}
  \begin{innerlist}
-  \item Research on indoor localization and Windows app analysis
-  \begin{innerlist}
-   \item[$-$] Adviser: Dr. Feng Zhao
-  \end{innerlist}
+  \item Computer vision and machine learning
+  %\begin{innerlist}
+  % \item[$-$] Advisor: Prof. Yong Yu
+  %\end{innerlist}
  \end{innerlist}
-\end{innerlist}
-
-\vspace{2pt}
-\textbf{Lab Member} \hfill {July 2011 to June 2013}
-\begin{innerlist}
- \item[] \href{http://www.apexlab.org/}{Data \& Knowledge Management Lab}, Shanghai Jiao Tong University
- \begin{innerlist}
-  \item Study on computer vision and machine learning
-  \begin{innerlist}
-   \item[$-$] Adviser: Prof. Yong Yu
-  \end{innerlist}
- \end{innerlist}
-\end{innerlist}
 
 \section{Publications}
 
 \begin{bibsection}
 
- \item {\textbf{Yongzhe Zhang}}, Chentao Wu, Jie Li and Minyi Guo.
-        TIP-code: A Three Independent Parity Code to Tolerate Triple Disk Failures with Optimal Update Complexity.
-        \emph{The 45th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN 2015)}, submitted.
+ \item Zirun Zhu, {\textbf{Yongzhe Zhang}}, Hsiang-Shang Ko, Pedro Martines, Joao Saraiva and Zhenjiang Hu.
+        Parsing and Reflective Printing, Bidirectionally.
+        \emph{The 9th International Conference on Software Language Engineering (SLE 2016)}
 
  \item {\textbf{Yongzhe Zhang}}, Chentao Wu, Jie Li and Minyi Guo.
         PCM: A Parity-check Matrix Based Approach to Improve Decoding Performance of XOR-based Erasure Codes.
-        \emph{The 35th IEEE International Conference on Distributed Computing Systems (ICDCS 2015)}, submitted.
+        \emph{The 34th International Symposium on Reliable Distributed Systems (SRDS 2015)}.
+
+ \item {\textbf{Yongzhe Zhang}}, Chentao Wu, Jie Li and Minyi Guo.
+        TIP-code: A Three Independent Parity Code to Tolerate Triple Disk Failures with Optimal Update Complexity.
+        \emph{The 45th International Conference on Dependable Systems and Networks (DSN 2015)}.
 
 \end{bibsection}
-
-\section{Participation in Book Written}
-
-\begin{bibsection}
-
- \item Yong Yu. ACM International Collegiate Programming Contest: Problems and Solutions.
-      Tsinghua University Press.
-
-\end{bibsection}
-
-\section{Attended Research Projects}
-
-\textbf{Research Member} \hfill {August 2013 to present}
-\begin{innerlist}
- \item[] \href{http://www.cs.sjtu.edu.cn}{Department of Computer Science and Engineering}, Shanghai Jiao Tong University
- \begin{innerlist}
-  \item Adaptive scaling methods of RAID systems
-  \begin{innerlist}
-   \item[$-$] Sponsored by the National Natural Science Foundation of China (Grant No. 61303012)
-   \item[$-$] From January 2014 to present
-  \end{innerlist}
-
-  \item Optimization on efficiency and energy for cloud storage systems
-  \begin{innerlist}
-   \item[$-$] Sponsored by the Natural Science Foundation of Shanghai Province (Grant No. 13ZR1421900)
-   \item[$-$] From July 2013 to present
-  \end{innerlist}
- \end{innerlist}
-\end{innerlist}
 
 \section{Achievements}
 
-\begin{innerlist}
- \item[] ACM International Collegiate Programming Contest:
+ ACM International Collegiate Programming Contest:
  \begin{innerlist}
-  \item 2nd place of the 2010 ACM-ICPC Asia Regional Contest, Jakarta Site
-  \item 4th place of the 2010 ACM-ICPC Asia Regional Contest, Chengdu Site
-  \item 2nd place of the 2009 ACM-ICPC Asia Regional Contest, Shanghai Site
-  \item 4th place of the 2009 ACM-ICPC Asia Regional Contest, Phuket Site
+  \item 2nd place of Jakarta Site, 4th place of Chengdu Site (2010)
+  \item 2nd place of Shanghai Site, 4th place of Phuket Site (2009)
  \end{innerlist}
-\end{innerlist}
 
-\section{Hardware and Software Skills}
+\section{Technical\\Skills}
 
-Computer Programming:
+Programming Languages:
 \begin{innerlist}
- \item Long-term working experience with C, C$+$$+$ and python
- \item Java, Octave and others
+ \item \CC, C, python, \LaTeX{}, Haskell, OCaml, Rust
 \end{innerlist}
-
-\halfblankline
-
-Productivity Applications:
-%
+Graph Processing Systems:
 \begin{innerlist}
- \item \TeX{} (\LaTeX{}, \BibTeX{}), most common productivity packages (for Windows, OS X, and Linux platforms)
+ \item Giraph, Pregel+
 \end{innerlist}
-
 
 \end{document}
 
