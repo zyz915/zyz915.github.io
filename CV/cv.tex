@@ -3,16 +3,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% NOTE: If you find that it says                                     %%
-%%                                                                    %%
-%%                           1 of ??                                  %%
-%%                                                                    %%
+%% NOTE: If you find that it says %%
+%%  %%
+%%   1 of ??    %%
+%%  %%
 %% at the bottom of your first page, this means that the AUX file     %%
 %% was not available when you ran LaTeX on this source. Simply RERUN  %%
 %% LaTeX to get the ``??'' replaced with the number of the last page  %%
 %% of the document. The AUX file will be generated on the first run   %%
-%% of LaTeX and used on the second run to fill in all of the          %%
-%% references.                                                        %%
+%% of LaTeX and used on the second run to fill in all of the    %%
+%% references.  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,21 +31,21 @@
 \newlength{\bibsep}
  {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
 \newenvironment{bibsection}%
-        {\begin{list}{}{%
-       \setlength{\leftmargin}{\bibhang}%
-       \setlength{\itemindent}{-\leftmargin}%
-       \setlength{\itemsep}{\bibsep}%
-       \setlength{\parsep}{\z@}%
-        \setlength{\partopsep}{0pt}%
-        \setlength{\topsep}{0pt}}}
-        {\end{list}\vspace{-.6\baselineskip}}
+  {\begin{list}{}{%
+ \setlength{\leftmargin}{\bibhang}%
+ \setlength{\itemindent}{-\leftmargin}%
+ \setlength{\itemsep}{\bibsep}%
+ \setlength{\parsep}{\z@}%
+  \setlength{\partopsep}{0pt}%
+  \setlength{\topsep}{0pt}}}
+  {\end{list}\vspace{-.6\baselineskip}}
 \makeatother
 
 % Layout: Puts the section titles on left side of page
 \reversemarginpar
 
 %
-%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%   PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
 %
 % The next \usepackage line changes the layout for CV style section
 % headings as marginal notes. It also sets up the paper size as either
@@ -70,19 +70,19 @@
 
 %% Use these lines for letter-sized paper
 \usepackage[paper=letterpaper,
-            %includefoot, % Uncomment to put page number above margin
-            marginparwidth=1.2in,     % Length of section titles
-            marginparsep=.05in,       % Space between titles and text
-            margin=1in,               % 1 inch margins
-            includemp]{geometry}
+%includefoot, % Uncomment to put page number above margin
+marginparwidth=1.2in,     % Length of section titles
+marginparsep=.05in, % Space between titles and text
+margin=1in,   % 1 inch margins
+includemp]{geometry}
 
 %% Use these lines for A4-sized paper
 %\usepackage[paper=a4paper,
-%            %includefoot, % Uncomment to put page number above margin
-%            marginparwidth=30.5mm,    % Length of section titles
-%            marginparsep=1.5mm,       % Space between titles and text
-%            margin=25mm,              % 25mm margins
-%            includemp]{geometry}
+%%includefoot, % Uncomment to put page number above margin
+%marginparwidth=30.5mm,    % Length of section titles
+%marginparsep=1.5mm, % Space between titles and text
+%margin=25mm,  % 25mm margins
+%includemp]{geometry}
 
 %% More layout: Get rid of indenting throughout entire document
 \setlength{\parindent}{0in}
@@ -92,31 +92,31 @@
 %% Reference the last page in the page number
 %
 % NOTE: comment the +LP line and uncomment the -LP line to have page
-%       numbers without the ``of ##'' last page reference)
+% numbers without the ``of ##'' last page reference)
 %
 % NOTE: uncomment the \pagestyle{empty} line to get rid of all page
-%       numbers (make sure includefoot is commented out above)
+% numbers (make sure includefoot is commented out above)
 %
 \usepackage{fancyhdr,lastpage}
 \pagestyle{fancy}
-\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\pagestyle{empty}% Uncomment this to get rid of page numbers
 \fancyhf{}\renewcommand{\headrulewidth}{0pt}
 \fancyfootoffset{\marginparsep+\marginparwidth}
 \newlength{\footpageshift}
 \setlength{\footpageshift}
-          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+    {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
 \lfoot{\hspace{\footpageshift}%
-       \parbox{4in}{\, \hfill %
-                    \arabic{page} of \protect\pageref*{LastPage} % +LP
-%                    \arabic{page}                               % -LP
-                    \hfill \,}}
+ \parbox{4in}{\, \hfill %
+  \arabic{page} of \protect\pageref*{LastPage} % +LP
+%  \arabic{page} % -LP
+  \hfill \,}}
 
 % Finally, give us PDF bookmarks
 \usepackage{color,hyperref}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
 \hypersetup{colorlinks,breaklinks,
-            linkcolor=darkblue,urlcolor=darkblue,
-            anchorcolor=darkblue,citecolor=darkblue}
+linkcolor=darkblue,urlcolor=darkblue,
+anchorcolor=darkblue,citecolor=darkblue}
 
 %%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -128,15 +128,15 @@
 %  as well)
 %
 % Usage: \makeheading{name}
-%        OR
-%        \makeheading[right_object]{name}
+%  OR
+%  \makeheading[right_object]{name}
 %
 % Place at top of document. It should be the first thing.
 % If ``right_object'' is provided in the square-braced optional
 % argument, it will be right justified on the same line as ``name'' at
 % the top of the CV. For example:
 %
-%       \makeheading[\emph{Curriculum vitae}]{Your Name}
+% \makeheading[\emph{Curriculum vitae}]{Your Name}
 %
 % will put an emphasized ``Curriculum vitae'' at the top of the document
 % as a title. Likewise, a picture could be included:
@@ -145,11 +145,11 @@
 %
 % the picture will be flush right across from the name.
 \newcommand{\makeheading}[2][]%
-        {\hspace*{-\marginparsep minus \marginparwidth}%
-         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
-             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
-                 \rule{\columnwidth}{1pt}%
-         \end{minipage}}
+  {\hspace*{-\marginparsep minus \marginparwidth}%
+   \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+ {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+     \rule{\columnwidth}{1pt}%
+   \end{minipage}}
 
 % The section headings
 %
@@ -163,27 +163,27 @@
 
 % An itemize-style list with lots of space between items
 \newenvironment{outerlist}[1][\enskip\textbullet]%
-        {\begin{itemize}[#1,leftmargin=*]}{\end{itemize}%
-         \vspace{-.6\baselineskip}}
+  {\begin{itemize}[#1,leftmargin=*]}{\end{itemize}%
+   \vspace{-.6\baselineskip}}
 
 % An environment IDENTICAL to outerlist that has better pre-list spacing
 % when used as the first thing in a \section
 \newenvironment{lonelist}[1][\enskip\textbullet]%
-        {\begin{list}{#1}{%
-        \setlength{\partopsep}{0pt}%
-        \setlength{\topsep}{0pt}}}
-        {\end{list}\vspace{-.6\baselineskip}}
+  {\begin{list}{#1}{%
+  \setlength{\partopsep}{0pt}%
+  \setlength{\topsep}{0pt}}}
+  {\end{list}\vspace{-.6\baselineskip}}
 
 % An itemize-style list with little space between items
 \newenvironment{innerlist}[1][\enskip\textbullet]%
-        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
-        {\end{itemize}}
+  {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+  {\end{itemize}}
 
 % An environment IDENTICAL to innerlist that has better pre-list spacing
 % when used as the first thing in a \section
 \newenvironment{loneinnerlist}[1][\enskip\textbullet]%
-        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
-        {\end{itemize}\vspace{-.6\baselineskip}}
+  {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+  {\end{itemize}\vspace{-.6\baselineskip}}
 
 % To add some paragraph space between lines.
 % This also tells LaTeX to preferably break a page on one of these gaps
@@ -226,15 +226,15 @@
 \section{Contact Information}
 
 % NOTE: Mind where the & separators and \\ breaks are in the following
-%       table.
+% table.
 %
 % ALSO: \rcollength is the width of the right column of the table
-%       (adjust it to your liking; default is 1.85in).
+% (adjust it to your liking; default is 1.85in).
 %
 \newlength{\rcollength}\setlength{\rcollength}{2.80in}%
 %
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-Programming Rresearch Lab & \textit{Office Phone:} (03) 4212-2611 \\
+Programming Research Lab & \textit{Office Phone:} (03) 4212-2611 \\
 National Institute of Informatics & \textit{E-mail:} \email{zyz915@nii.ac.jp} \\
 2-1-2 Hitotsubashi, Chiyoda-ku & \textit{Website:} \url{https://zyz915.github.io/}\\
 Tokyo, 101-8430, Japan & \\
@@ -246,31 +246,41 @@ Distributed Computing, Graph Processing, Functional Programming, Erasure codes
 
 \section{Education}
 
-\href{http://www.sjtu.edu.cn/}{\textbf{Shanghai Jiao Tong University}}, Shanghai, China
+\href{http://www.soken.ac.jp/en/}{\textbf{SOKENDAI (The Graduate University of Advanced Studies)}}, Japan
 \begin{outerlist}
+ \item[] Ph.D. student in Department of Informatics (Oct. 2015 to present)
+ \begin{innerlist}
+  \item Research Topic: distributed computing, graph processing
+  \item Advisor: Prof. Zhenjiang Hu
+ \end{innerlist}
+\end{outerlist}
 
+\vspace{8pt}
+\href{http://www.sjtu.edu.cn/}{\textbf{Shanghai Jiao Tong University}}, China
+\begin{outerlist}
  \item[] MSc in
-        \href{http://www.cs.sjtu.edu.cn/}{Computer Science and Technology}, Sept. 2013 to June 2015
-        \begin{innerlist}
-        \item Graduate Thesis: \emph{TIP-code: A Three Independent Parity Code to Tolerate Triple Disk Failures with Optimal Update Complexity}
-        \item Advisor: {Dr. Chentao Wu, Prof. Minyi Guo}
-        \end{innerlist}
+  \href{http://www.cs.sjtu.edu.cn/}{Computer Science and Technology} (Sept. 2013 to June 2015)
+  \begin{innerlist}
+  \item Graduate Thesis: \emph{TIP-code: A Three Independent Parity Code to Tolerate Triple Disk Failures with Optimal Update Complexity}
+  \item Advisor: {Dr. Chentao Wu, Prof. Minyi Guo}
+  \end{innerlist}
 
- \item[] BSc in \href{http://www.cs.sjtu.edu.cn/}{Computer Science and Technology}, Sept. 2009 to June 2013
-        \begin{innerlist}
-        \item Dissertation: \emph{Price-oriented Product Recommendation in New Categories}
-        \item Advisor: {Prof. Yong Yu}
-        \end{innerlist}
-
+ \item[] BSc in \href{http://www.cs.sjtu.edu.cn/}{Computer Science and Technology} (Sept. 2009 to June 2013)
+  \begin{innerlist}
+  \item Dissertation: \emph{Price-oriented Product Recommendation in New Categories}
+  \item Advisor: {Prof. Yong Yu}
+  \end{innerlist}
 \end{outerlist}
 
 \section{Research Experience}
 
-%\textbf{\href{http://www.yitutech.com/}{Shanghai Yitu Technology Co. Ltd.}} \hfill {Feb. 2013 to Aug. 2013}
-% \begin{innerlist}
-%  \item Computer vision (object classification)
-% \end{innerlist}
-\textbf{\href{http://epcc.sjtu.edu.cn/wordpress/?page_id=94}{Embedded and Pervasive Computing Center}, Shanghai Jiao Tong University} \hfill {Sept. 2013 to Aug. 2015}
+\textbf{\href{http://www.prg.nii.ac.jp/}{Programming Research Lab}, National Institute of Informatics} \\ {Oct. 2015 to present}
+ \begin{innerlist}
+  \item distributed computing, graph processing
+ \end{innerlist}
+
+\vspace{6pt}
+\textbf{\href{http://epcc.sjtu.edu.cn/wordpress/?page_id=94}{Embedded and Pervasive Computing Center}, Shanghai Jiao Tong University} \\ {Sept. 2013 to Aug. 2015}
  \begin{innerlist}
   \item Erasure codes and reliable storage systems
   %\begin{innerlist}
@@ -278,8 +288,8 @@ Distributed Computing, Graph Processing, Functional Programming, Erasure codes
   %\end{innerlist}
  \end{innerlist}
 
-\vspace{8pt}
-\textbf{\href{http://research.microsoft.com/en-us/groups/mass/}{Mobile and Sensing Systems Group}, Microsoft Research Asia} \hfill {Aug. 2012 to Jan. 2013}
+\vspace{6pt}
+\textbf{\href{http://research.microsoft.com/en-us/groups/mass/}{Mobile and Sensing Systems Group}, Microsoft Research Asia} \\ {Aug. 2012 to Jan. 2013}
  \begin{innerlist}
   \item Indoor localization and Windows app analysis
   %\begin{innerlist}
@@ -287,8 +297,8 @@ Distributed Computing, Graph Processing, Functional Programming, Erasure codes
   %\end{innerlist}
  \end{innerlist}
 
-\vspace{8pt}
-\textbf{\href{http://www.apexlab.org/}{Data and Knowledge Management Lab}, Shanghai Jiao Tong University} \hfill {July 2011 to June 2013}
+\vspace{6pt}
+\textbf{\href{http://www.apexlab.org/}{Data and Knowledge Management Lab}, Shanghai Jiao Tong University} \\ {July 2011 to June 2013}
  \begin{innerlist}
   \item Computer vision and machine learning
   %\begin{innerlist}
@@ -301,16 +311,16 @@ Distributed Computing, Graph Processing, Functional Programming, Erasure codes
 \begin{bibsection}
 
  \item Zirun Zhu, {\textbf{Yongzhe Zhang}}, Hsiang-Shang Ko, Pedro Martines, Joao Saraiva and Zhenjiang Hu.
-        Parsing and Reflective Printing, Bidirectionally.
-        \emph{The 9th International Conference on Software Language Engineering (SLE 2016)}
+  Parsing and Reflective Printing, Bidirectionally.
+  \emph{The 9th International Conference on Software Language Engineering (SLE'16)}
 
  \item {\textbf{Yongzhe Zhang}}, Chentao Wu, Jie Li and Minyi Guo.
-        PCM: A Parity-check Matrix Based Approach to Improve Decoding Performance of XOR-based Erasure Codes.
-        \emph{The 34th International Symposium on Reliable Distributed Systems (SRDS 2015)}.
+  PCM: A Parity-check Matrix Based Approach to Improve Decoding Performance of XOR-based Erasure Codes.
+  \emph{The 34th International Symposium on Reliable Distributed Systems (SRDS'15)}.
 
  \item {\textbf{Yongzhe Zhang}}, Chentao Wu, Jie Li and Minyi Guo.
-        TIP-code: A Three Independent Parity Code to Tolerate Triple Disk Failures with Optimal Update Complexity.
-        \emph{The 45th International Conference on Dependable Systems and Networks (DSN 2015)}.
+  TIP-code: A Three Independent Parity Code to Tolerate Triple Disk Failures with Optimal Update Complexity.
+  \emph{The 45th International Conference on Dependable Systems and Networks (DSN'15)}.
 
 \end{bibsection}
 
@@ -326,7 +336,7 @@ Distributed Computing, Graph Processing, Functional Programming, Erasure codes
 
 Programming Languages:
 \begin{innerlist}
- \item \CC, C, python, \LaTeX{}, Haskell, OCaml, Rust
+ \item \CC, C, python, Haskell, OCaml, Rust, Java, Pascal
 \end{innerlist}
 Graph Processing Systems:
 \begin{innerlist}
