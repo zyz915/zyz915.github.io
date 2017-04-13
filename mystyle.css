@@ -23,3 +23,11 @@ h2 {
 p {
     font-size: 13.5pt;
 }
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
