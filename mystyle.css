@@ -3,7 +3,7 @@ html {
 	margin-left: auto;
 	margin-right: auto;
     /* background-color: #F1F8E9; */
-    background-color: #FFF3E0;
+	background-color: #FAFAFA;
 	/* font-family: Helvetica, sans-serif; */
 	font-family: -apple-system-body, BlinkMacSystemFont, sans-serif;
 }
@@ -13,7 +13,6 @@ body {
 	padding: 0;
 	margin-bottom: 20px;
 	margin-top: 0;
-	/* background: #fbfbfb; */
 }
 
 h2 {
