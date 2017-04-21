@@ -1,0 +1,74 @@
+html {
+    /* background-color: #F1F8E9; */
+	background-color: #FAFAFA;
+	/* font-family: -apple-system-body, BlinkMacSystemFont, sans-serif; */
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+    font-size: 14pt;
+	padding: 0;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+h2 {
+	margin-top: 2ex;
+    font-size: 18pt;
+}
+
+.section {
+	font-size: 14pt;
+	margin-top: 1ex;
+	margin-left: -0.6em;
+}
+
+.keywords {
+	font-size: 16pt;
+	font-weight: normal;
+}
+
+p {
+  text-align: justify;
+  hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+a:link {
+	color: #202040;
+}
+
+a:visited {
+	color: #202040;
+}
+
+.edu-entry {
+	margin-bottom: 1.5ex;
+}
+
+.tutorial a:link {
+	color: #0277BD;
+}
+
+.tutorial a:visited {
+	color: #0277BD;
+}
+
+.pub-entry {
+	font-size: 13pt;
+	margin-bottom: 1.5ex;
+}
+
+.pub-entry .title {
+	font-style: italic;
+}
+
+.pub-entry a:link {
+	color: #0277BD;
+}
+
+.pub-entry a:visited {
+	color: #0277BD;
+}
