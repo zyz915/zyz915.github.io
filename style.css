@@ -12,15 +12,41 @@ body {
 	margin-top: 0;
 }
 
+#navbar {
+	margin-top: 1ex;
+	background: #E0E0E0;
+	border: none;
+ 	box-shadow: none;
+}
+
+#navbar a {
+	font-size: 16pt;
+	color: #3E2723;
+	font-weight: 700;
+}
+
+#navbar a:hover {
+	text-decoration: underline;
+}
+
+#navbar a:active {
+	color: #8D6E63;
+}
+
+#navbar li {
+  margin-left: 2em;
+}
+
 h2 {
 	margin-top: 2ex;
+	margin-left: 0.4em;
     font-size: 18pt;
 }
 
 .section {
 	font-size: 14pt;
 	margin-top: 1ex;
-	margin-left: -0.6em;
+	margin-left: 0em;
 }
 
 .keywords {
@@ -42,6 +68,10 @@ a:link {
 
 a:visited {
 	color: #202040;
+}
+
+.label-default {
+	font-weight: 500;
 }
 
 .edu-entry {
