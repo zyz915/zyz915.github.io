@@ -1,12 +1,10 @@
 html {
-    /* background-color: #F1F8E9; */
 	background-color: #FAFAFA;
-	/* font-family: -apple-system-body, BlinkMacSystemFont, sans-serif; */
 	font-family: "Open Sans", sans-serif;
 }
 
 body {
-    font-size: 14pt;
+	font-size: 14pt;
 	padding: 0;
 	margin-bottom: 20px;
 	margin-top: 0;
