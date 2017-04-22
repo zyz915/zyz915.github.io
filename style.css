@@ -37,9 +37,13 @@ body {
   margin-left: 2em;
 }
 
+.page-header {
+	margin-left: 0.3em;
+}
+
 h2 {
 	margin-top: 2ex;
-	margin-left: 0.4em;
+	margin-left: 0.3em;
     font-size: 18pt;
 }
 
