@@ -1,0 +1,8 @@
+@inproceedings{zhang2015pcm,
+  title={{PCM}: A Parity-Check Matrix Based Approach to Improve Decoding Performance of XOR-based Erasure Codes},
+  author={Zhang, Yongzhe and Wu, Chentao and Li, Jie and Guo, Minyi},
+  booktitle={Proceedings of the 34th IEEE Symposium on Reliable Distributed Systems},
+  pages={182--191},
+  year={2015},
+  organization={IEEE}
+}
