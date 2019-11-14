@@ -1,0 +1,6 @@
+@inproceedings{zhang2019composing,
+  title={{FastSV}: A Distributed-Memory Connected Component Algorithm with Fast Convergence},
+  author={Azad, Ariful, Zhang, Yongzhe and Hu, Zhenjiang},
+  booktitle={SIAM Conference on Parallel Processing for Scientific Computing (PP20)},
+  year={2019}
+}

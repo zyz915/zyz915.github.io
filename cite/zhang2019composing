@@ -1,6 +1,8 @@
 @inproceedings{zhang2019composing,
   title={Composing Optimization Techniques for Vertex-Centric Graph Processing via Communication Channels},
   author={Zhang, Yongzhe and Hu, Zhenjiang},
-  booktitle={33rd IEEE International Parallel and Distributed Processing Symposium},
-  year={2019}
+  booktitle={33rd IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  pages={428--438},
+  year={2019},
+  organization={IEEE}
 }
