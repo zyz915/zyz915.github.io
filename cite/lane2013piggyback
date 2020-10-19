@@ -1,8 +1,0 @@
-@inproceedings{lane2013piggyback,
-  title={{Piggyback CrowdSensing (PCS)}: energy efficient crowdsourcing of mobile sensor data by exploiting smartphone app opportunities},
-  author={Lane, Nicholas D and Chon, Yohan and Zhou, Lin and Zhang, Yongzhe and Li, Fan and Kim, Dongwon and Ding, Guanzhong and Zhao, Feng and Cha, Hojung},
-  booktitle={Proceedings of the 11th ACM Conference on Embedded Networked Sensor Systems},
-  pages={7},
-  year={2013},
-  organization={ACM}
-}

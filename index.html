@@ -21,6 +21,12 @@
  <!-- Latest compiled and minified JavaScript -->
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
  <script>function getEmail() {return "zyz915.gmail.com".replace(".","@")}</script>
+ <script>function showBibtex(elem) {
+  if (elem.getAttribute('style') != 'display: block')
+  elem.setAttribute('style', 'display: block')
+  else
+  elem.setAttribute('style', 'display: none')
+ }</script>
 </head>
 
 <body>
@@ -33,7 +39,7 @@
   <nav id="navbar" class="navbar navbar-default">
    <ul class="nav navbar-nav">
     <li><a href="#Contact">Contact</a></li>
-    <li><a href="#Research">Research</a></li>
+    <li><a href="#Introduction">Introduction</a></li>
     <li><a href="#Education">Education</a></li>
     <li><a href="#Projects">Projects</a></li>
     <li><a href="#Publications">Publications</a></li>
@@ -43,23 +49,23 @@
   <div id="Contact"><h2>Contact</h2></div>
   <div class="row section">
    <div class="col-md-12">
-    <div class="lab-info"><a href="http://www.prg.nii.ac.jp">Programming Research Lab</a> (Room 1611)</div>
-    <div class="lab-info"><a href="http://www.nii.ac.jp/en/">National Institute of Informatics</a><br>
-     2-1-2 Hitotsubashi, Chiyoda-ku, Tokyo, 101-8430, Japan</div>
-    <div class="lab-info">Mobile: +81-70-4009-6620 (Japan)</div>
+    <!--div class="lab-info"><a href="http://www.prg.nii.ac.jp">Programming Research Lab</a> (Room 1611)</div-->
+    <!--div class="lab-info"><a href="http://www.nii.ac.jp/en/">National Institute of Informatics</a><br>
+     2-1-2 Hitotsubashi, Chiyoda-ku, Tokyo, 101-8430, Japan</div-->
+    <!--div class="lab-info">Mobile: +81-70-4009-6620 (Japan)</div-->
     <div class="lab-info">Email: <script>document.write("<a href=\"mailto:" + getEmail() + "\">" + getEmail() + "</a>")</script></div>
    </div>
   </div>
 
-  <div id="Research"><h2>Research</h2></div>
+  <div id="Introduction"><h2>Introduction</h2></div>
   <div class="row section">
    <div class="col-md-12">
     <div class="research">
      <p>
-      I am a Ph.D. student at the Department of Informatics, the Graduate University for Advanced Studies (SOKENDAI) and National Institute of Informatics (NII). I obtained my Master's degree in Computer Science and Technology from Shanghai Jiao Tong University.
+      I earned my Ph.D. degree in computer science in September 2020 from the Graduate University for Advanced Studies (SOKENDAI) and the National Institute of Informatics (NII). I received M.S. and B.S. degree in computer science from Shanghai Jiao Tong University.
      </p>
      <p>
-      My recent research focuses on the solutions for large-scale graph processing on distributed-memory. Suitable abstractions can often help people understand and solve complicated problems, and my research tries to use domain-specific languages to hide various low-level details when writing distributed graph algorithms, such as parallelism and message passing. We further explore the design of DSLs to provide the compiler with abundant hints to optimize the generated code using domain-specific knowledge.
+      I am generally interested in large-scale graph processing and parallel graph algorithms. A major focus in my Ph.D. work is the design of domain-specific languages to simplify the development and the optimization of graph analytics applications on distributed-memory. Recently, I am interested in the linear algebra approach for parallel and distributed graph processing. Prior to these works, I have work or research experience in erasure coding, reliable storage systems, and computer vision.
     </p>
      <!--div class="keywords">
       <span class="label label-default">parallel graph algorithm</span>
@@ -74,7 +80,7 @@
   <div class="row section">
    <div class="col-md-12">
     <p>
-     <span style="color:#d62728">I am open for job opportunities now.</span> My resume can be found <a href="https://drive.google.com/open?id=1ZXRNtbg0vOocAnRIqXy3Z8oLygBI_XX8" target="_blank">here</a>.
+     <!--span style="color:#d62728">I am open for job opportunities now.</span--> My resume can be found <a href="https://www.jianguoyun.com/p/DYCTMMYQvrvyCBiUiMQD" target="_blank">here</a>.
     </p>
    </div>
   </div>
@@ -83,10 +89,10 @@
   <div class="row section">
    <div class="col-md-12">
     <div class="edu-entry">
-     2015.10 ~ present &ndash; Ph.D. student<br>
+     2015.10 ~ 2020.09 &ndash; Ph.D. degree<br>
      <a href="http://www.nii.ac.jp/graduate/index_e.html">Department of Informatics</a><br>
-     <a href="http://www.soken.ac.jp/en/rcourse/hukugoh/">School of Multidisciplinary Sciences</a><br>
-     <a href="http://www.soken.ac.jp/en/">SOKENDAI (The Graduate University for Advanced Studies)</a>
+     <!--a href="http://www.soken.ac.jp/en/rcourse/hukugoh/">School of Multidisciplinary Sciences</a><br-->
+     <a href="http://www.soken.ac.jp/en/">The Graduate University for Advanced Studies (SOKENDAI)</a>
     </div>
     <div class="edu-entry">
      2013.09 ~ 2015.07 &ndash; M.S. degree<br>
@@ -105,8 +111,8 @@
   <div class="row section">
    <div class="col-md-12">
     <div class="project">
-     FastSV: a fast and scalable distributed-memory connected component algorithm<br>
-     [&#8200;<a href="https://arxiv.org/abs/1910.05971">draft paper</a>&#8200;]
+     LAGraph: a collection of linear algebraic graph algorithms using the GraphBLAS.
+     [&#8200;<a href="https://github.com/GraphBLAS/LAGraph" target="_blank">github</a>&#8200;]
     </div>
    </div>
   </div>
@@ -114,8 +120,8 @@
   <div class="row section">
    <div class="col-md-12">
     <div class="project">
-     A SQL-like language for vertex-centric graph processing<br>
-     [&#8200;<a href="https://bitbucket.org/zyz915/sql-core">repository</a>&#8200;]
+     FastSV: a fast and scalable distributed-memory connected component algorithm.
+     [&#8200;<a href="https://github.com/GraphBLAS/LAGraph" target="_blank">github</a>&#8200;]
     </div>
    </div>
   </div>
@@ -123,8 +129,8 @@
   <div class="row section">
    <div class="col-md-12">
     <div class="project">
-     A Pregel system with the channel interface for composing optimization techniques<br>
-     [&#8200;<a href="https://bitbucket.org/zyz915/pregel-channel">repository</a>&#8200;]
+     A Pregel system with the channel interface for composing optimization techniques.
+     [&#8200;<a href="https://bitbucket.org/zyz915/pregel-channel" target="_blank">bitbucket</a>&#8200;]
     </div>
    </div>
   </div>
@@ -132,9 +138,9 @@
   <div class="row section">
    <div class="col-md-12">
     <div class="project">
-     Palgol: a domain-specific language for vertex-centric graph processing<br>
-     [&#8200;<a href="https://bitbucket.org/zyz915/palgol">repository</a>&#8200;]
-     [&#8200;<a href="https://bitbucket.org/zyz915/palgol/src/master/doc/tutorial.md" target>tutorial</a>&#8200;]
+     Palgol: a domain-specific language for vertex-centric graph processing.
+     [&#8200;<a href="https://bitbucket.org/zyz915/palgol" target="_blank">bitbucket</a>&#8200;]
+     [&#8200;<a href="https://bitbucket.org/zyz915/palgol/src/master/doc/tutorial.md" target="_blank">tutorial</a>&#8200;]
     </div>
    </div>
   </div>
@@ -142,18 +148,66 @@
   <div id="Publications"><h2>Publications</h2></div>
   <div class="row section">
    <div class="col-md-12">
+
+    <div class="pub-entry">
+     <span class="authors">Ariful Azad, Mohsen M. Aznaveh, Scott Beamer, .. (and 21 more authors), <U>Yongzhe Zhang</U></span>
+     <span class="title">“Evaluation of Graph Analytics Frameworks Using the GAP Benchmark Suite”</span>
+     <span class="venue">2020 IEEE International Symposium on Workload Characterization (IISWC'20) (to appear)</span>
+    </div>
+
+    <div class="pub-entry">
+     <span class="authors"><U>Yongzhe Zhang</U>, Ariful Azad, Aydın Buluç</span>
+     <span class="title">“Parallel Algorithms for Finding Connected Components Using Linear Algebra”</span>
+     <span class="venue">Journal of Parallel and Distributed Computing (JPDC'20)</span>
+     [&#8200;<a href="https://escholarship.org/content/qt8ms106vm/qt8ms106vm.pdf" target="_blank">pdf</a>, 
+     <a onclick="showBibtex(getElementById('zhang2020parallel'))">bibtex</a>&#8200;]
+<div id="zhang2020parallel" class="bibtex" style="display: none"><pre>
+<code>@article{zhang2020parallel,
+  title={Parallel Algorithms for Finding Connected Components Using Linear Algebra},
+  author={Zhang, Yongzhe and Azad, Ariful and Bulu\c{c}, Ayd{\i}n},
+  journal={Journal of Parallel and Distributed Computing (JPDC)},
+  volume={144},
+  number={1},
+  pages={14--27},
+  year={2020},
+  publisher={Elsevier}
+}</code></pre></div>
+    </div>
+
     <div class="pub-entry">
      <span class="authors"><U>Yongzhe Zhang</U>,  Ariful Azad, Zhenjiang Hu</span>
      <span class="title">“FastSV: A Distributed-Memory Connected Component Algorithm with Fast Convergence”</span>
      <span class="venue">SIAM Conference on Parallel Processing for Scientific Computing (PP20)</span>
-     [&#8200;<a href="https://arxiv.org/abs/1910.05971" target="_blank">pdf</a>, <a href="https://github.com/GraphBLAS/LAGraph" target="_blank">repo</a>&#8200;]
+     [&#8200;<a href="https://arxiv.org/abs/1910.05971" target="_blank">pdf</a>, 
+     <a onclick="showBibtex(getElementById('zhang2020fastsv'))">bibtex</a>&#8200;]
+<div id="zhang2020fastsv" class="bibtex" style="display: none"><pre>
+<code>@inproceedings{zhang2020fastsv,
+  title={{FastSV}: A Distributed-Memory Connected Component Algorithm with Fast Convergence},
+  author={Zhang, Yongzhe and Azad, Ariful and Hu, Zhenjiang},
+  booktitle={Proceedings of the SIAM Conference on Parallel Processing for Scientific Computing (PP20)},
+  year={2020},
+  pages={46--57},
+  organization={SIAM}
+}</code></pre></div>
     </div>
 
     <div class="pub-entry">
      <span class="authors"><U>Yongzhe Zhang</U>, Zhenjiang Hu</span>
      <span class="title">“Composing Optimization Techniques for Vertex-Centric Graph Processing via Communication Channels”</span>
      <span class="venue">The 33rd IEEE International Parallel and Distributed Processing Symposium (IPDPS'19)</span>
-     [&#8200;<a href="https://arxiv.org/pdf/1811.01669" target="_blank">pdf</a>, <a href="https://bitbucket.org/zyz915/pregel-channel" target="_blank">repo</a>, <a href="cite/zhang2019composing" target="_blank">cite</a>, <a href="https://drive.google.com/open?id=1sUZWyjIOh3F6xX9CCm_RJezoajyVPRwr" target="_blank">slides</a>&#8200;]
+     [&#8200;<a href="https://arxiv.org/pdf/1811.01669" target="_blank">pdf</a>,
+     <a href="https://bitbucket.org/zyz915/pregel-channel" target="_blank">repo</a>,
+     <a href="https://drive.google.com/open?id=1sUZWyjIOh3F6xX9CCm_RJezoajyVPRwr" target="_blank">slides</a>,
+     <a onclick="showBibtex(getElementById('zhang2019composing'))">bibtex</a>&#8200;]
+<div id="zhang2019composing" class="bibtex" style="display: none"><pre>
+<code>@inproceedings{zhang2019composing,
+  title={Composing Optimization Techniques for Vertex-Centric Graph Processing via Communication Channels},
+  author={Zhang, Yongzhe and Hu, Zhenjiang},
+  booktitle={Proceedings of the 33rd IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  pages={428--438},
+  year={2019},
+  organization={IEEE}
+}</code></pre></div>
     </div>
 
     <div class="pub-entry">
@@ -161,35 +215,89 @@
      <span class="title">“Palgol: A High-Level DSL for Vertex-Centric
 Graph Processing with Remote Data Access”</span>
      <span class="venue">The 15th Asian Symposium on Programming Languages and Systems (APLAS'17)</span>
-     [&#8200;<a href="https://drive.google.com/open?id=0B_OemK-Fv5vocC1nYlFwb1dlcTg" target="_blank">pdf</a>, <a href="https://bitbucket.org/zyz915/palgol" target="_blank">repo</a>, <a href="cite/zhang2017palgol" target="_blank">cite</a>, <a href="https://drive.google.com/open?id=1DAMxYNsqJxas3cW9xvKMQwTqrUvIqOvE" target="_blank">slides</a>&#8200;]
+     [&#8200;<a href="https://drive.google.com/open?id=0B_OemK-Fv5vocC1nYlFwb1dlcTg" target="_blank">pdf</a>,
+     <a href="https://bitbucket.org/zyz915/palgol" target="_blank">repo</a>,
+     <a href="https://drive.google.com/open?id=1DAMxYNsqJxas3cW9xvKMQwTqrUvIqOvE" target="_blank">slides</a>,
+     <a onclick="showBibtex(getElementById('zhang2017palgol'))">bibtex</a>&#8200;]
+<div id="zhang2017palgol" class="bibtex" style="display: none"><pre>
+<code>@inproceedings{zhang2017palgol,
+  title={Palgol: A High-Level DSL for Vertex-Centric Graph Processing with Remote Data Access},
+  author={Zhang, Yongzhe and Ko, Hsiang-Shang and Hu, Zhenjiang},
+  booktitle={Proceedings of the 15th Asian Symposium on Programming Languages and Systems},
+  pages={301--320},
+  year={2017},
+  organization={ACM}
+}</code></pre></div>
     </div>
 
     <div class="pub-entry">
      <span class="authors">Zirun Zhu, <U>Yongzhe Zhang</U>, Hsiang-Shang Ko, Pedro Martins, João Saraiva, Zhenjiang Hu</span>
      <span class="title">“Parsing and Reflective Printing, Bidirectionally”</span>
      <span class="venue">The 9th ACM SIGPLAN International Conference on Software Language Engineering (SLE'16)</span>
-     [&#8200;<a href="http://www.prg.nii.ac.jp/members/zhu/papers/sle2016.pdf" target="_blank">pdf</a>, <a href="http://biyacc.yozora.moe">demo</a>, <a href="cite/zhu2016parsing" target="_blank">cite</a>&#8200;]
+     [&#8200;<a href="http://www.prg.nii.ac.jp/members/zhu/papers/sle2016.pdf" target="_blank">pdf</a>,
+     <a href="http://biyacc.yozora.moe">demo</a>,
+     <a onclick="showBibtex(getElementById('zhu2016parsing'))">bibtex</a>&#8200;]
+<div id="zhu2016parsing" class="bibtex" style="display: none"><pre>
+<code>@inproceedings{zhu2016parsing,
+  title={Parsing and reflective printing, bidirectionally},
+  author={Zhu, Zirun and Zhang, Yongzhe and Ko, Hsiang-Shang and Martins, Pedro and Saraiva, Joao and Hu, Zhenjiang},
+  booktitle={Proceedings of the 2016 ACM SIGPLAN International Conference on Software Language Engineering},
+  pages={2--14},
+  year={2016},
+  organization={ACM}
+}</code></pre></div>
     </div>
     
     <div class="pub-entry">
      <span class="authors"><U>Yongzhe Zhang</U>, Chentao Wu, Jie Li, Minyi Guo</span>
      <span class="title">“PCM: A Parity-check Matrix Based Approach to Improve Decoding Performance of XOR-based Erasure Codes”</span>
      <span class="venue">The 34th International Symposium on Reliable Distributed Systems (SRDS'15)</span>
-     [&#8200;<a href="http://www.cs.sjtu.edu.cn/~guo-my/PDF/Conferences/C157.pdf" target="_blank">pdf</a>, <a href="https://bitbucket.org/zyz915/pcm_based">repo</a>, <a href="cite/zhang2015pcm" target="_blank">cite</a>&#8200;]
+     [&#8200;<a href="http://www.cs.sjtu.edu.cn/~guo-my/PDF/Conferences/C157.pdf" target="_blank">pdf</a>,
+     <a href="https://bitbucket.org/zyz915/pcm_based">repo</a>,
+     <a onclick="showBibtex(getElementById('zhang2015pcm'))">bibtex</a>&#8200;]
+<div id="zhang2015pcm" class="bibtex" style="display: none"><pre>
+<code>@inproceedings{zhang2015pcm,
+  title={{PCM}: A Parity-Check Matrix Based Approach to Improve Decoding Performance of XOR-based Erasure Codes},
+  author={Zhang, Yongzhe and Wu, Chentao and Li, Jie and Guo, Minyi},
+  booktitle={Proceedings of the 34th IEEE Symposium on Reliable Distributed Systems},
+  pages={182--191},
+  year={2015},
+  organization={IEEE}
+}</code></pre></div>
     </div>
     
     <div class="pub-entry">
      <span class="authors"><U>Yongzhe Zhang</U>, Chentao Wu, Jie Li, Minyi Guo</span>
      <span class="title">“TIP-code: A Three Independent Parity Code to Tolerate Triple Disk Failures with Optimal Update Complexity”</span>
      <span class="venue">The 45th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN'15)</span>
-     [&#8200;<a href="http://www.cs.sjtu.edu.cn/~guo-my/PDF/Conferences/C151.pdf" target="_blank">pdf</a>, <a href="cite/zhang2015tip" target="_blank">cite</a>&#8200;]
+     [&#8200;<a href="http://www.cs.sjtu.edu.cn/~guo-my/PDF/Conferences/C151.pdf" target="_blank">pdf</a>,
+     <a onclick="showBibtex(getElementById('zhang2015tip'))">bibtex</a>&#8200;]
+<div id="zhang2015tip" class="bibtex" style="display: none"><pre>
+<code>@inproceedings{zhang2015tip,
+  title={{TIP}-code: A three independent parity code to tolerate triple disk failures with optimal update complextiy},
+  author={Zhang, Yongzhe and Wu, Chentao and Li, Jie and Guo, Minyi},
+  booktitle={Proceedings of the 45th Annual IEEE/IFIP International Conference on Dependable Systems and Networks},
+  pages={136--147},
+  year={2015},
+  organization={IEEE}
+}</code></pre></div>
     </div>
     
     <div class="pub-entry">
      <span class="authors">Nichloas D. Lane, Yohan Chon, Lin Zhou, <U>Yongzhe Zhang</U>, Fan Li, Dongwon Kim, Guangzhong Ding, Feng Zhao, Hojung Cha</span>
      <span class="title">“Piggyback CrowdSensing (PCS): Energy Efficient Crowdsourcing of Mobile Sensor Data by Exploiting Smartphone App Opportunities”</span>
      <span class="venue">The 11th Conference on Embedded Networked Sensor Systems (SenSys'13)</span>
-     [&#8200;<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.677.3803&rep=rep1&type=pdf" target="_blank">pdf</a>, <a href="cite/lane2013piggyback" target="_blank">cite</a>&#8200;]
+     [&#8200;<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.677.3803&rep=rep1&type=pdf" target="_blank">pdf</a>,
+     <a onclick="showBibtex(getElementById('lane2013piggyback'))">bibtex</a>&#8200;]
+<div id="lane2013piggyback" class="bibtex" style="display: none"><pre>
+<code>@inproceedings{lane2013piggyback,
+  title={{Piggyback CrowdSensing (PCS)}: energy efficient crowdsourcing of mobile sensor data by exploiting smartphone app opportunities},
+  author={Lane, Nicholas D and Chon, Yohan and Zhou, Lin and Zhang, Yongzhe and Li, Fan and Kim, Dongwon and Ding, Guanzhong and Zhao, Feng and Cha, Hojung},
+  booktitle={Proceedings of the 11th ACM Conference on Embedded Networked Sensor Systems},
+  pages={7},
+  year={2013},
+  organization={ACM}
+}</code></pre></div>
     </div>
   </div>
  </div>

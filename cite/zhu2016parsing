@@ -1,8 +1,0 @@
-@inproceedings{zhu2016parsing,
-  title={Parsing and reflective printing, bidirectionally},
-  author={Zhu, Zirun and Zhang, Yongzhe and Ko, Hsiang-Shang and Martins, Pedro and Saraiva, Joao and Hu, Zhenjiang},
-  booktitle={Proceedings of the 2016 ACM SIGPLAN International Conference on Software Language Engineering},
-  pages={2--14},
-  year={2016},
-  organization={ACM}
-}

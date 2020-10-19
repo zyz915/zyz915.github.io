@@ -72,8 +72,17 @@ a:visited {
 	color: #202040;
 }
 
-.project {
-	margin-bottom: 1.5ex;
+.bibtex {
+	margin-top: 1ex;
+	margin-bottom: 1ex;
+}
+
+.research a:link {
+	color: #202040;
+}
+
+.research a:visited {
+	color: #202040;
 }
 
 .label-default {

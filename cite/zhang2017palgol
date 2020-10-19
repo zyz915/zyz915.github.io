@@ -1,7 +1,0 @@
-@inproceedings{zhang2017palgol,
-  title={Palgol: A High-Level DSL for Vertex-Centric Graph Processing with Remote Data Access},
-  author={Zhang, Yongzhe and Ko, Hsiang-Shang and Hu, Zhenjiang},
-  booktitle={Proceedings of the 15th Asian Symposium on Programming Languages and Systems},
-  pages={301--320},
-  year={2017}
-}
