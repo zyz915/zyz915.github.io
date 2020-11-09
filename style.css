@@ -64,24 +64,16 @@ p {
   -webkit-hyphens: auto;
 }
 
-a:link {
-	color: #202040;
-}
-
-a:visited {
-	color: #202040;
-}
-
 .bibtex {
 	margin-top: 1ex;
 	margin-bottom: 1ex;
 }
 
-.research a:link {
+.edu-entry a:link {
 	color: #202040;
 }
 
-.research a:visited {
+.edu-entry a:visited {
 	color: #202040;
 }
 
@@ -93,11 +85,11 @@ a:visited {
 	margin-bottom: 1.5ex;
 }
 
-.project a:link {
+a:link {
 	color: #0277BD;
 }
 
-.project a:visited {
+a:visited {
 	color: #0277BD;
 }
 
@@ -109,12 +101,4 @@ a:visited {
 .pub-entry .title {
 	font-style: italic;
 	font-weight: 600;
-}
-
-.pub-entry a:link {
-	color: #0277BD;
-}
-
-.pub-entry a:visited {
-	color: #0277BD;
 }
